@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="https://www.google.com/" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="txt-user">Username:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="username" id="txt-user" name="st-name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txt-pass">Password:</label>
+                </td>
+                <td>
+                    <input type="password" placeholder="password" id="txt-pass" name="st-pass"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Age:</label>
+                </td>
+                <td>
+                    <input type="number"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender"/> Male
+                    <input type="radio" name="gender"/> Female
+                    <input type="radio" name="gender"/> LGBT
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >City:</label>
+                </td>
+                <td>
+                    <select>
+                        <option>Ha Noi</option>
+                        <option>Da Nang</option>
+                        <option>Ho Chi Minh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Languages:</label>
+                </td>
+                <td>
+                    <input type="checkbox"> JAVA
+                    <input type="checkbox"> PHP
+                    <input type="checkbox"> C++
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Content:</label>
+                </td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="Create">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="screen-type" value="Create">
+    </form>
+</body>
+</html>
