@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="numberA" />
+    <input type="number" id="numberB"/>
+    <button onclick="sum()">+</button>
+    <p id="result"></p>
+
+    <script>
+        function sum() {
+            a = +document.getElementById("numberA").value;
+            b = +document.getElementById("numberB").value;
+            document.getElementById("result").innerText = a + b;
+        }
+    </script>
+</body>
+</html>
