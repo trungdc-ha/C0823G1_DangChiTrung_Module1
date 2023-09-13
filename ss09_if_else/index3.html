@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Phân loại hv
+    Nhập điểm tb
+    Nếu tb >= 9 ==> xuất sắc
+    7 <= tb < 9 ==> tốt
+    6 <= tb < 7 ==> khá
+    tb < 6 ==> yếu
+     */
+    let average = prompt("Input average: ")
+    if (average >= 9) { //10
+        document.write("Excellent.");
+    } else if (average >= 7) {
+        document.write("Good.")
+    } else if (average >= 6) {
+        document.write("Average.")
+    } else {
+        document.write("Blow.")
+    }
+
+    if (average >= 9) { //10
+        document.write("Excellent.");
+    }
+    if (average >= 7 && average < 9){
+        document.write("Good.")
+    }
+    if(average >= 6 && average < 7) {
+        document.write("Average.")
+    }
+    if(average < 6){
+        document.write("Blow.")
+    }
+</script>
+</body>
+</html>

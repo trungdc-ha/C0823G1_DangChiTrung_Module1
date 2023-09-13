@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        Cho người dùng nhập 1 số
+        Nếu số là 2 ==> thứ 2
+        Nếu số là 3 ==> thứ 3
+        Nếu số là 4 ==> thứ 4
+        Nếu số là 5 ==> thứ 5
+        Nếu số là 6 ==> thứ 6
+        Nếu số là 7 ==> thứ 7
+        Nếu số là 8 ==> Chu Nhat
+        Ngoài những số trên, thì thông báo lỗi
+         */
+        let input = +prompt("Nhập vào một số:"); //2
+        switch (input){ //so sánh ===
+            case 2: document.write("Thứ 2"); break
+            case 3: document.write("Thứ 3"); break
+            case 4: document.write("Thứ 4"); break;
+            case 5: document.write("Thứ 5"); break;
+            case 6: document.write("Thứ 6"); break;
+            case 7: document.write("Thứ 7"); break;
+            case 8: document.write("Chủ Nhật"); break;
+            default: document.write("Số nhập không hợp lệ.")
+        }
+    </script>
+</body>
+</html>

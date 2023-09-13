@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        Viết chương trình cho phép nhập điểm thi
+        Nếu điểm >=75
+         - Nếu tỉ lệ vắng nghỉ >=10 thì đi nói chuyện coach
+         - Nếu tỉ lệ vắng nghỉ < 10 thì thông báo Pass
+        Ngược lại
+         - Nếu tỉ lệ vắng nghỉ >=10 thì thông báo fail
+         - Nếu tỉ lệ vắng nghỉ < 3 thì đi nói chuyện coach
+         */
+
+        let point = prompt("Input point: ");
+        let absent = prompt("Input absent: ");
+        if(point >= 75){
+            if(absent < 10){
+                alert("Pass");
+            } else {
+                alert("Consider with coach..");
+            }
+        } else {
+            if(absent < 3){
+                alert("Consider with coach..");
+            } else {
+                alert("Fail");
+            }
+        }
+    </script>
+</body>
+</html>
