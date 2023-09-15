@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Cho phép người dùng nhập ký tự từ bàn phím
+    //sau đó hiển thị kí tự đó ra
+    //Dừng nhập khi người dùng nhập "x"
+    /*
+    - Nội dung cần lặp ở đây là gì?
+    - Điều kiện lặp là gì?
+    - Số lần lặp là bao nhiêu?
+     Không xác định ==> while | do-while
+     */
+    // let input;
+    // do {
+    //     input = prompt("Input character: ");
+    //     console.log(input);
+    //     // document.write(input + "</br>");
+    // }while (input != "x");
+
+
+    // let count = 0;
+    // while (count++ < 10) { //2 4 6 8 10
+    //    //1 3 5 7 9
+    //     count++; //2 4 6 8 10
+    // }
+    // console.log(count);
+    //11
+
+    let count = 0;
+    do {
+        count++; //1 3 5 7 9 11
+    } while (count++ < 10); //1 3 5 7 9 11
+    //2 4 6 8 10 12
+    console.log(count)
+
+
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let i, len, text;
+    for (i = 2, len = cars.length, text = ""; i < len; i++) {
+        text += cars[i] + " ";
+    }
+    alert(text);
+</script>
+</body>
+</html>
