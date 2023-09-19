@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="playGame()">Chơi</button>
+<script>
+    /*
+    [3, 8]
+    Math.random(); (0, 1)
+     Math.random() * 4; (0, 4)
+      Math.random() * (8 - 3);
+      Math.random() * (5); (0, 5)
+      Math.random() * (5) + 3; (3, 8)
+      Math.round(Math.random() * (5) + 3)
+     */
+    function playGame() {
+        let canDuoi = +prompt("Nhap can duoi:");//3
+        let canTren = +prompt("Nhap can tren:");//8
+        let random = Math.round(Math.random() * (canTren - canDuoi) + canDuoi);
+        console.log(random);
+        let input = +prompt("Nhap so ma ban doan:");
+        let count = 1;
+        do {
+            if (input > random) {
+                input = +prompt("So ban nhap lớn hơn, nhập lại:");
+                count++;
+            } else if (input < random) {
+                input = +prompt("So ban nhap nhỏ hơn, nhập lại:");
+                count++;
+            } else {
+                alert("Ban da doan chinh xac");
+                break;
+            }
+        } while (count < 3)
+    }
+</script>
+</body>
+</html>

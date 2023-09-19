@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.
+    Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ.
+    Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.
+
+    Nội dung/vấn đề lặp đi lặp lại là gì?
+    Điều kiện lặp? x > 100 || x < 20
+    Số lần lặp? ==> Không xác định số lần lặp ?
+        Có cần phải lặp ít nhất 1 lần hay không ?
+     */
+
+    let temp;
+    do {
+        temp = prompt("Nhap nhiet độ: ");
+        if (temp > 100) {
+            alert("Hay giam nhiet do xuong.");
+        } else if (temp < 20) {
+            alert("Hay tang nhiet do len");
+        } else {
+            document.write("Nhiet do OK la: " + temp);
+        }
+    } while (temp > 100 || temp < 20);
+</script>
+</body>
+</html>
