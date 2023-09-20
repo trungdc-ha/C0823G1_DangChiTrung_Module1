@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [4, 1, 6, 3];
+    console.log(arr);
+
+    //thêm đầu
+    // arr.unshift(9);
+
+    //Xóa đầu
+    // arr.shift()
+
+    //thêm cuối
+    // arr.push(7);
+
+    //xóa cuối
+    // arr.pop();
+
+    //chèn vị trí bất kỳ
+    // arr.splice(2, 0, 11,12);
+
+    //xóa vị trí bất kỳ
+    // arr.splice(2, 1);
+
+    // console.log(arr)
+
+    //Chuyển mảng thành chuỗi
+    // let str = arr.toString();
+    // let str = arr.join("-");
+    // console.log(str);
+
+    //tìm kiếm
+    // let index = arr.indexOf(6); //2
+    // let index = arr.indexOf(11); //-1
+    // let index = arr.indexOf(11); //-1 //lastIndexOf
+    // console.log(index);
+
+    // let check = arr.includes(6); //true
+    // let check = arr.includes(11); //false
+    // console.log(check)
+
+    //đảo
+    // arr.reverse();
+    // console.log(arr);
+
+    //sắp xếp
+    // arr.sort((a, b) => a - b);
+    arr.sort((a, b) => b - a);
+
+    console.log(arr);
+
+    //    let arr = [4, 1, 6, 3];
+    //a = 4, b = 1 [1, 4, 6, 3]
+    //a = 4, b = 6 [1, 4, 6, 3]
+    //a = 6, b = 3 [1, 4, 3, 6]
+    //sắp xếp nổi bột
+</script>
+</body>
+</html>
