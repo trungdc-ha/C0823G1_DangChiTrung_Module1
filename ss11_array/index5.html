@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let arr2d = ["a", "b", "c"];
+        // let arr2d = [
+        //     "a",
+        //     "b",
+        //     "c"
+        // ];
+
+        // let arr2d = [ [1,2,3], [4,5,6], [7,8,9] ];
+        // let arr2d = [
+        //     [1,2,3], //0
+        //     [4,5,6,4], //1
+        //     [7,8,9]  //2
+        // ];
+
+        // console.log(arr2d[0][2])//3
+        // console.log(arr2d[2][1])//8
+        // for(let row = 0; row < arr2d.length; row++){
+        //     for(let col = 0; col < arr2d[row].length; col++){
+        //         document.write(arr2d[row][col] + " ");
+        //     }
+        //     document.write("</br>");
+        // }
+
+        //Tạo một mảng hai chiều với số hàng và cột được nhập từ bàn phím
+        let inputRow = +prompt("Nhap so hang: "); //3
+        let inputCol = +prompt("Nhap so cot: "); //4
+
+        let arr2d = new Array(inputRow);
+        console.log(arr2d); //[U, U, U]
+        /*
+        [
+            U,
+            U,
+            U
+        ]
+         */
+        for(let row = 0; row <arr2d.length; row++){
+            arr2d[row] = new Array(inputCol);
+            // arr2d[row] = [];
+            /*
+                [
+                    [U, U, U, U],
+                    U,
+                    U
+                ]
+            */
+            for(let col = 0; col < arr2d[row].length; col++){
+                arr2d[row][col] = +prompt("input value at ["+row+"]["+col+"]: ");
+                /*
+                [
+                    [1, 2, U, U],
+                    U,
+                    U
+                ]
+                */
+            }
+
+        }
+
+
+        for(let row = 0; row < arr2d.length; row++){
+            for(let col = 0; col < arr2d[row].length; col++){
+                document.write(arr2d[row][col] + " ");
+            }
+            document.write("</br>");
+        }
+
+    </script>
+</body>
+</html>

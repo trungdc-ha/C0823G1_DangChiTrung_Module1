@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let str = "ha noi  da nang";
+    // // str.toString();
+    // console.log(str);
+    // console.log(str.split(" ")); //chuỗi ==> mảng
+    // // console.log(str.toString());
+
+    // let arr1 = ['c', '9', 'c', '2', '6', '1'];
+    //
+    // let count = 0;
+    // for (let index = 0; index < arr.length; index++) {
+    //     if (isNaN(arr[index]) === false) {
+    //         count++;
+    //     }
+    // }
+    // document.write(count);
+
+    //u, e, o, a, i
+    let str = "hy";
+    let arr = str.split("");
+    console.log(arr);
+    let count = 0;
+    for(let index = 0; index < arr.length; index++){
+        switch (arr[index]){
+            case "u":
+            case "e":
+            case "o":
+            case "a":
+            case "i":
+                count++;
+                break;
+        }
+    }
+    document.write(count);
+</script>
+</body>
+</html>
