@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input placeholder="input name..">
+<div id="myTable"></div>
+<script>
+
+    let productName = ["Samsung", "Iphone", "Nokia"];
+    displayTable();
+
+    function displayTable() {
+        let textHTML = "<table border=\"1\">\n" +
+            "        <tr>\n" +
+            "            <th>Name</th>\n" +
+            "            <th>Edit</th>\n" +
+            "            <th>Delete</th>\n" +
+            "        </tr>\n";
+
+        for (let index = 0; index < productName.length; index++) {
+            textHTML += "<tr>" +
+                "<td>" + productName[index] + "</td>" +
+                "<td>" + "<button onclick='updateName("+index+")'>Edit</button>" + "</td>" +
+                "<td>" + "<button>Delete</button>" + "</td>" +
+                "</tr>";
+        }
+        textHTML += "    </table>";
+        document.getElementById("myTable").innerHTML = textHTML;
+    }
+
+    function updateName(index) {
+        console.log(index);
+        let newName = prompt("Please input new name: " + productName[index] );
+        productName[index] = newName;
+        displayTable();
+    }
+
+</script>
+</body>
+</html>

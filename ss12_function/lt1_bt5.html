@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let ngoiSaoArr = [ "Polaris", "Aldebaran", "Deneb", "Vega",
+            "Altair", "Dubhe", "Regulus"];
+        let chomSaoArr = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra",
+            "Aquila", "Ursa Major", "Leo"]
+
+        function layThongTinChomSao(ngoiSao) {
+            let timThay = false;
+            for(let index = 0; index < ngoiSaoArr.length; index++){
+                if(ngoiSao === ngoiSaoArr[index]){
+                    timThay = true;
+                    alert(chomSaoArr[index]);
+                }
+            }
+            if (timThay === false){
+                alert("Không tìm thấy.");
+            }
+        }
+
+        let a = prompt("Nhap ngoi sao: "); //Aldebaran
+        layThongTinChomSao(a);
+    </script>
+</body>
+</html>
