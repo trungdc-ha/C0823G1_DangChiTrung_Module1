@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class DienThoai {
+            //Hàm khởi tạo thông tin của đối tượng
+           constructor(ten, hangSX) {
+               this.ten = ten;
+               this.hangSX = hangSX;
+           }
+
+           getTen(){
+               return this.ten;
+           }
+
+           setTen(tenMoi){
+               if(tenMoi === "admin"){
+                   alert("Ten admin khong duoc dung");
+               } else {
+                   this.ten = tenMoi;
+               }
+           }
+
+        // constructor(ten) {
+        //     this.ten = ten;
+        // }
+
+           goiDien() {
+               document.write("Dien thoai: "+ this.ten +" dang goi...</br>");
+           }
+
+            // goiDien(azzz) {
+            //     document.write("Dien thoai: "+ this.ten +" dang goi...</br>");
+            // }
+        }
+
+        /*B2 Tạo đối tượng */
+        let iphone = new DienThoai("iphone 15", "Apple");
+        iphone.setTen("iphone 16")
+        iphone.goiDien();
+
+        // let nokia = new DienThoai("Nokia E95", "Nokia");
+        // nokia.goiDien();
+    </script>
+</body>
+</html>
