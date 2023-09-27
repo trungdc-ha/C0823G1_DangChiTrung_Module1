@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Student {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+
+            getId(){
+                return this.id;
+            }
+
+            setId(newId){
+                this.id = newId;
+            }
+        }
+
+        let student1 = new Student(1, 'Hoa');
+        // console.log(student1.id);
+        console.log(student1.getId());
+        // student1.id = 4;
+        student1.setId(4)
+        console.log(student1.id);
+    </script>
+</body>
+</html>
